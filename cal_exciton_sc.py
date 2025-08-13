@@ -22,10 +22,10 @@ def nb_sum(zero, ssp, e, W, eta, tol):
 
 
 
-ns = 6000
-zero_p_S = np.load('zero_p_S.npy')
-S_p_Sp = np.load('S_p_Sp_sym.npy')
-eigenvalues = np.load('eigenvalues.npy')
+ns = 1472
+zero_p_S = np.load('CdS_zero_p_S.npy')
+S_p_Sp = np.load('CdS_S_p_Sp.npy')
+eigenvalues = np.load('CdS_exciton_energy.npy')
 
 a = np.array([3.926124439, 0, 0,  
    0, 6.750729329, 0,
@@ -37,9 +37,9 @@ hbar_ev = 6.582119569e-16 # eV s
 m_e = 9.10938356e-31 # kg
 elec = -1.60217662e-19 # C
 alat = a[0,0]*1e-10
-kx = 24
-ky = 12
-kz = 1
+kx = 100
+ky = 100
+kz = 66
 nw = 351
 
 
